@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 1600px;
     margin: 0;
     padding: 0;
@@ -9,6 +9,11 @@ body {
     --textcolor-black: #212121;
     --textcolor-grey: #757575;
     --linkcolor-blue: #2196F3;
+    --color-white: #ffffff;
+    --color-totalblack: #000000;
+    --color-border: #eeeeee;
+    --backgroundcolor-hero-footer: #2F303A;
+    --backgroundcolor-team: #F5F4FA;
 }
 
 ul {
@@ -26,16 +31,16 @@ a{
 .logo-footer {
     font-family: 'Raleway';
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--linkcolor-blue);
     text-decoration: none;
 }
 .logo-header > span {
-    color: #000;
+    color: var(--color-totalblack);
 }
 .logo-footer span {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .header {     
@@ -44,7 +49,7 @@ a{
 .header-contact-link{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--textcolor-grey);
 }
@@ -58,7 +63,7 @@ a{
 .nav-item-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--textcolor-black);
 }
@@ -92,17 +97,17 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #2F303A;
+    background: var(--backgroundcolor-hero-footer);
 }
 .main-hero-title{
     width: 700px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--color-white);
     margin: 200px 450px 30px 450px;
 }
 .hero-button {
@@ -118,9 +123,9 @@ a{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--color-white);
     margin-bottom: 200px;
 }
 
@@ -134,7 +139,7 @@ a{
 .benefits-item>h3 {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--textcolor-black);
@@ -143,7 +148,7 @@ a{
 .benefits-item>p {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--textcolor-grey);
     width: 270px;
@@ -155,7 +160,7 @@ a{
 .works>h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--textcolor-black);
@@ -164,12 +169,12 @@ a{
 
 .team {
     padding: 94px 215px;
-    background: #F5F4FA;
+    background: var(--backgroundcolor-team);
 }
 .team>h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--textcolor-black);
@@ -179,7 +184,7 @@ a{
 .team-item {
     width: 270px;
     height: 368px;
-    background-color: #fff;
+    background-color: var(--color-white);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -187,7 +192,7 @@ a{
 .team-item>h3 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--textcolor-black);
@@ -196,7 +201,7 @@ a{
 .team-item>p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--textcolor-grey);
@@ -208,7 +213,7 @@ a{
 .footer {
     /* width: 1600px;
     height: 252px; */
-    background: #2F303A;
+    background: var(--backgroundcolor-hero-footer);
     padding: 60px 215px;
 }
 
@@ -223,17 +228,28 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-contacts [href="https://goo.gl/maps/Ki57or2TvZPJZ8mEA"] {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+}
 .footer-contacts a:hover {
-    color: #fff;
+    color: var(--linkcolor-blue);
 }
 .footer-contacts a:focus {
-    color: #fff;
+    color: var(--linkcolor-blue);
 }
 
+
+
+/* портфоліо */
 
 .main-portfolio {
     width: 1170px;
@@ -256,7 +272,7 @@ a{
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--textcolor-black);
@@ -267,7 +283,7 @@ a{
     border-radius: 4px;
     cursor: pointer;
 
-    color: #fff;
+    color: var(--color-white);
 }
 .portfolio-buttons button:focus {
     background: var(--linkcolor-blue);
@@ -275,7 +291,7 @@ a{
     border-radius: 4px;
     cursor: pointer;
 
-    color: #fff;
+    color: var(--color-white);
 }
 
 .portfolio-items {
@@ -285,14 +301,14 @@ a{
 .portfolio-items>li {
     width: 370px;
     height: 404px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
     margin-bottom: 27px;
 }
 .portfolio-items h2 {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--textcolor-black);
     margin: 0;
@@ -303,10 +319,11 @@ a{
 .portfolio-items p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--textcolor-grey);
     margin: 0;
     margin-bottom: 20px;
     margin-left: 24px;
 }
+
