@@ -298,7 +298,9 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
-.portfolio-items>li {
+
+/* .portfolio-items li */
+.box {
     width: 370px;
     height: 404px;
     background: var(--color-white);
@@ -327,3 +329,16 @@ a{
     margin-left: 24px;
 }
 
+.hide {
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    display: none;
+}
+
+@keyframes a1{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
